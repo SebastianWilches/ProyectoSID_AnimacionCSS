@@ -1,6 +1,7 @@
 :root {
     --Azul: #30CFF2;
     --Naranja: #FCA808;
+    --blanco: #F2F2F2;
 }
 
 body {
@@ -127,4 +128,14 @@ body {
 
 .footer{
     margin-top: 10rem;
+}
+
+
+@media (max-width: 1060px) {
+    .navBar{
+        margin-bottom: 10rem;
+    }
+    a{
+        color: var(--blanco);
+    }
 }
