@@ -20,3 +20,11 @@
 <div>
 <img src="https://github.com/SebastianWilches/ProyectoSID_AnimacionCSS/blob/master/readmeImg/5.png">
 <div>
+
+### Animación
+<div>
+<img src="https://github.com/SebastianWilches/ProyectoSID_AnimacionCSS/blob/master/readmeImg/6.png">
+<div>
+<div>
+<img src="https://github.com/SebastianWilches/ProyectoSID_AnimacionCSS/blob/master/readmeImg/7.png">
+<div>
