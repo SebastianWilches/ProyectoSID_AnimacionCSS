@@ -2,7 +2,7 @@
 
 ## Screenshots página web
 
-###Index
+### Index
 <div>
 <img src="https://github.com/SebastianWilches/ProyectoSID_AnimacionCSS/blob/master/readmeImg/1.png">
 <div>
@@ -13,7 +13,7 @@
 <img src="https://github.com/SebastianWilches/ProyectoSID_AnimacionCSS/blob/master/readmeImg/3.png">
 <div>
 
-###Integrantes
+### Integrantes
 <div>
 <img src="https://github.com/SebastianWilches/ProyectoSID_AnimacionCSS/blob/master/readmeImg/4.png">
 <div>
