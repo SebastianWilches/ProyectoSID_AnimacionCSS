@@ -107,6 +107,30 @@ a {
 
 }
 
+@media (max-width: 1060px) {
+
+    .imgBanner {
+        margin: auto;
+    }
+
+    .navBar {
+        display: flex;
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .contenedorNavBar {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    a{
+        color: var(--negro);
+    }
+    
+}
 
 /*                  FOOTER                  */
 .footer {
@@ -133,6 +157,12 @@ a {
 
 .imgGit {
     height: 5rem;
+}
+
+@media (max-width: 1060px) {
+    .footer{
+        height: 16rem;
+    }
 }
 
 /*                  CONTENIDO                   */
@@ -171,6 +201,13 @@ a {
     text-align: justify;
 }
 
+@media (max-width: 1060px) {
+    .flexContenido{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 /* QUIENES SOMOS */
 
 .contenidoSomos>h1 {
@@ -183,6 +220,10 @@ a {
 
 .contenidoSomos>p {
     font-size: 2rem;
+}
+
+@media (max-width: 1060px) {
+    
 }
 
 /* CURSOS */
@@ -217,11 +258,11 @@ a {
     transition: transform 1s 0.5s;
 }
 
-.card:hover{
+.card:hover {
     transform: rotateY(180deg);
 }
 
-.face{
+.face {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -255,9 +296,11 @@ a {
     border-radius: 100%;
 }
 
-
-
-/*                  ANIMACIÓN                    */
-.containerAnimacion{
-    height: 1000px;
+@media (max-width: 1060px) {
+    .containerCards{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(27,40rem);
+        margin-top: 10rem;
+        margin-bottom: 5rem;
+    }
 }
