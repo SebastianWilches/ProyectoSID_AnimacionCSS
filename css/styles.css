@@ -1,0 +1,263 @@
+/*                      Tipografia                       */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    /*1rem = 10px*/
+
+    margin: 0;
+}
+
+:root {
+    /* Colores */
+    --negro: #0D0D0D;
+    --blanco: #F2F2F2;
+    --moradoClaro: #A140F0;
+    --moradoOscuro: #3B1B40;
+    --cafe: #A64521;
+    --azul: #145E8C;
+
+
+    /* Tipografias */
+    --titulos: 'Josefin Sans', sans-serif;
+    --textos: 'Poppins', sans-serif;
+
+}
+
+/*                      Generalidades                       */
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--titulos);
+}
+
+h2 {
+    color: var(--blanco);
+    margin: 0;
+}
+
+h3 {
+    color: var(--negro);
+    margin: 0;
+}
+
+p {
+    font-family: var(--textos);
+}
+
+a {
+    text-decoration: none;
+    color: var(--blanco);
+    font-family: var(--textos);
+}
+
+
+/*                      NAVBAR                       */
+
+.navBar {
+    height: 14rem;
+    width: 100%;
+    background-color: var(--negro);
+    padding: 0 4rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    -webkit-box-shadow: 0px 10px 49px -15px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 10px 49px -15px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 10px 49px -15px rgba(0, 0, 0, 0.75);
+}
+
+.imgBanner {
+    height: 13rem;
+}
+
+.contenedorNavBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+
+}
+
+.contenedorNavBar>a {
+    margin: auto;
+    transition: color .5s ease;
+    font-size: 2rem;
+}
+
+.contenedorNavBar>a:hover {
+
+    color: var(--moradoClaro);
+
+}
+
+
+/*                  FOOTER                  */
+.footer {
+    height: 14rem;
+    width: 100%;
+    background-color: var(--negro);
+    padding: 0 4rem;
+
+    text-align: center;
+
+    -webkit-box-shadow: 0px -8px 55px -21px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px -8px 55px -21px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px -8px 55px -21px rgba(0, 0, 0, 0.75);
+}
+
+.contenidoFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+
+    gap: 1rem;
+}
+
+.imgGit {
+    height: 5rem;
+}
+
+/*                  CONTENIDO                   */
+/* HEADER */
+.containerHeader {
+    height: 50rem;
+    width: 100%;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.contenidoHeader {
+    height: 100%;
+    background-image: url(../img/header.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.containerContenido {
+    height: auto;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.flexContenido {
+    display: flex;
+}
+
+.flexContenido>p {
+    height: 100%;
+    margin: auto 1rem;
+    text-align: justify;
+}
+
+/* QUIENES SOMOS */
+
+.contenidoSomos>h1 {
+    font-size: 6rem;
+    font-family: var(--textos);
+    color: var(--moradoOscuro);
+    text-decoration: underline;
+    text-decoration-color: var(--moradoClaro);
+}
+
+.contenidoSomos>p {
+    font-size: 2rem;
+}
+
+/* CURSOS */
+
+.contenidoCursos>h1 {
+    font-size: 6rem;
+    font-family: var(--textos);
+    color: var(--moradoOscuro);
+    text-decoration: underline;
+    text-decoration-color: var(--moradoClaro);
+}
+
+.imgCursos {
+    width: 100%;
+}
+
+
+
+
+/*                  CARDS                    */
+.card {
+    /* padding: 1.5rem; */
+    border: 0.2rem solid var(--azul);
+    border-radius: 1rem;
+
+    width: 100%;
+    height: 100%;
+
+    /* Backface */
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s 0.5s;
+}
+
+.card:hover{
+    transform: rotateY(180deg);
+}
+
+.face{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.face-front {
+    backface-visibility: hidden;
+}
+
+.face-back {
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+.containerCards {
+    height: auto;
+    /* min-height: 80rem; */
+    width: 80%;
+    text-align: center;
+    margin: 2rem auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(9, 40rem);
+    gap: 2rem;
+}
+
+.imgIntegrante {
+    margin-top: 1rem;
+    width: 25rem;
+    border-radius: 100%;
+}
+
+
+
+/*                  ANIMACIÓN                    */
+.containerAnimacion{
+    height: 1000px;
+}
